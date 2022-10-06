@@ -1,5 +1,5 @@
-var privateKey = '118c720a466dd26e1abbb3cb4b779b477a6353a8';
-var publicKey = 'cc5b4472ce8ff9ce63367faba0beb981';
+var privateKey = 'd858d467ba62aae9c14f0122931bfef12c3f2068';
+var publicKey = '4ebd10e897955a2f749d92b4ef3ec2a6';
 
 
 async function marvelAPICall(e){ 
@@ -17,7 +17,7 @@ else {
     let hash = "57bf92a2ad590993fd98a7befc1c9a2a"
     let name = $('#search-bar').val();
     let limit = 100;
-    let response = await fetch(`https://gateway.marvel.com:80/v1/public/characters?nameStartsWith=${name}&ts=${ts}&limit=${limit}&apikey=${publicKey}&hash=${hash}`);
+    let response = await fetch(`https://gateway.marvel.com/v1/public/characters?nameStartsWith=${name}&ts=${ts}&limit=${limit}&apikey=${publicKey}&hash=${hash}`);
     let data = await response.json();
     console.log(data);
     let resultsArray = data.data.results;
