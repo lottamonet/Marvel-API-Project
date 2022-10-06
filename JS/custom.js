@@ -14,7 +14,7 @@ else {
    $('#content').css("margin-bottom", "2em")
 }
     let ts = 1;
-    let hash = "57bf92a2ad590993fd98a7befc1c9a2a"
+    let hash = "b6a08452d704a3efa2ee93b2e7909753"
     let name = $('#search-bar').val();
     let limit = 100;
     let response = await fetch(`https://gateway.marvel.com/v1/public/characters?nameStartsWith=${name}&ts=${ts}&limit=${limit}&apikey=${publicKey}&hash=${hash}`);
