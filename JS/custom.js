@@ -17,7 +17,7 @@ else {
     let hash = "57bf92a2ad590993fd98a7befc1c9a2a"
     let name = $('#search-bar').val();
     let limit = 100;
-    let response = await fetch(`http://gateway.marvel.com:80/v1/public/characters?nameStartsWith=${name}&ts=${ts}&limit=${limit}&apikey=${publicKey}&hash=${hash}`);
+    let response = await fetch(`https://gateway.marvel.com:80/v1/public/characters?nameStartsWith=${name}&ts=${ts}&limit=${limit}&apikey=${publicKey}&hash=${hash}`);
     let data = await response.json();
     console.log(data);
     let resultsArray = data.data.results;
